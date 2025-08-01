@@ -1,0 +1,19 @@
+[data-aos="fade-right"], [data-aos="fade-left"] {
+  transition: transform 0.5s ease-in-out;
+}
+
+[data-aos="fade-right"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="fade-left"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="fade-right"]:not(.aos-animate) {
+  transform: translateX(-100%);
+}
+
+[data-aos="fade-left"]:not(.aos-animate) {
+  transform: translateX(100%);
+}
